@@ -1,0 +1,112 @@
+diff --git a/repository_before/__init__.py b/repository_after/__init__.py
+index d05e256..96cafb1 100644
+--- a/repository_before/__init__.py
++++ b/repository_after/__init__.py
+@@ -1,2 +1,2 @@
+-# Package marker for repository_before
++# Package marker for repository_after
+ 
+diff --git a/repository_before/__pycache__/__init__.cpython-311.pyc b/repository_after/__pycache__/__init__.cpython-311.pyc
+index 3ed73f4676108757c5fe502fa6b7ab216bb09b8a..22c0baf72b6a60a1168ed846f7479067ced32a70 100644
+GIT binary patch
+delta 35
+pcmaFO_==HtIWI340}xES?VPDTk=K~9cA{erYhqeSYSF~a767+r3l9JQ
+
+delta 36
+qcmaFG_?nS-IWI340}xES?VPDGk=K~9ZlYrjTT*ITeo^YgO%?#ckPC7E
+
+diff --git a/repository_before/app/__pycache__/__init__.cpython-311.pyc b/repository_after/app/__pycache__/__init__.cpython-311.pyc
+index 8315c08e2336ffdb30869f0c0dc84e8049b5d74f..ed39439f4564b7168eaedab87c92367d6f396de3 100644
+GIT binary patch
+delta 20
+bcmaFQ_>OUc17qVv#~jwgw35`KiJNTzRF?<`
+
+delta 21
+ccmaFI_?~fs17p)f#~ik#)U^Df)QOvH09>I6X#fBK
+
+diff --git a/repository_before/app/__pycache__/score.cpython-311.pyc b/repository_after/app/__pycache__/score.cpython-311.pyc
+index 58ff2782895306ec09e9390c6612117e40b9b09a..310f3feb48e23f2d0f2ed6bde9466607dbe1bd9e 100644
+GIT binary patch
+delta 1265
+zcmaJ=?`s=n9RGfwyGxrk*W{WtuCtbI>FOeqkd+Q!%%ZffMEa(vv?%eGyUyUHNuRrP
+zizH2y3MUR(xfktZU=Va2z7h8qi1@yNg5hAVM8<p-D1)+BexFM$M!_%le4ZcQ-#_kG
+z?YDF4163UXqGwN*3j2HNWMhsl`(S{978GF}5Dc~p>u5-X%m^9EF0M<4yb7tIr$RG@
+z{;;7trc)@Ic@!^w3ehgnI=MkWCUF;>K1*yHY#BaC)-eo@km^%|K@Ds0JsJAp%-G;9
+z&k$B2Ns+C=or|}nHMoTaqj;p10slfhPU}PjvJW*<dWb6zMZj3K1$XB8PUaok<aVa0
+z=QGQte5L3eD(^S+4aejey<E=N`4TtN<?8d{>y}=;Vd#sW%;w5Ex6Ry!RnncDRkH1B
+z`npxh>z2Jphn|#7)@|Xp2`y~G37z1H06{6{OSZ#(B``rZyzPhcrOj=VlV6)PNM>e+
+zhiUW2|Lcuw#1JL3-zI26Cvoxa$KTB#O}yL%S<wP;!(AqYwa4-E2a^Yrt?a$2`%~@s
+z+;M#FDANB<y9~oxClYg)Pft%fqhs#8Jxm6_dZBTJ9kN%Ifnth;f@WT&!#+^c&bk9s
+z+QAO}-5mp0q1T@jTX`xJsP<A}(@7zZ(yiBoUZRP9qQup6hPk0vEGJjmH2DMxjtb#R
+z1Wlm46zy?z{BHJ(?K|79D$-E2PBi9jxm%P-ki%zV8tkzI4a7f23x>!*kVA8?^jbVu
+zmmP&(`c#u!lGkQ&2@J_g;B?Fp_5T;sD_}e}m}@=c{e;=k4-Hly3e)WNta!*Sq2kT5
+z%c_`yfa)Vo)O(jzG4S)~clISFc!XHKvaMSc(+}M;3pYP<c-(X4+HBBfU%F{JK?(d}
+z8kw^A$$Z(+t2RGJn%*nQTk7S&MAf9J<kQ}#%EVN!q9Zht`CKr;Ty$-mmi@Vx4kZ^=
+zWu^-RF8&djKG^!E@^z*4-o2gsJMBpNIFfepSqRi*EBj#K+l9mPKW5v>h2!KxJ96zf
+za?Qm@e}=ALLnU)Rzy9Xb(gpbC!q8Gu;v&<O%teWV;DfjW*IbmIi!KJC(ce@o85PT1
+u<n#0<2E$$>=t_v#ftQX3zpfm@Xcx{PCZpE93IYQddjs*sF8m(`zW)OE)FZe6
+
+delta 857
+zcmaJ<O=uHA7@gn!X}k8vlq9t+HEGjCuto47Sj4R@qS9PEwFhO*ZfhV-!tT}@NX*4U
+z6v2dTv4U1l74g<yMM+V-S`aJ?g<gAGC_?E$oJluUJ@_&6&3ilFyf@$Oeh+-^RNg2`
+z3t;hn{Yv_BO$lG?VdNRmfetfZ9?Sp;bfV*ja0cq=CP>gdUY&rhq-(Zer{|4i3iC&P
+zh-~G2|EF^cUl3PIq)1*PN2T4)2i!hUqB5{~jUPq21_5}-=24Vrb|lI?|E{v-<~{&L
+z>U_lgk*v(ibX20#AdBzgX|M>7QPcA((dimu25kBU0+ViSGA1Yda{<9urX}H6&xw+A
+zt*@AyD1##O`?1LY6r5!;r2KBE)MB?fUq}I>4VA9Kp1G!xOYdo!1;Z5<jr81Idk;E4
+zgksFabB68G*-TEeU2NH=i_=-#l^DwNSL+g8D_G95czrO)lw4XcG}AH_hAo~3{*1%2
+z6M&gBcZ}JbX^d+5{HT>;Xe3{7TT)skb-O{$A$E>`AZyp@lcMDi9q<546}a1`Je_<z
+zSsi|qe3Gm{4+(N;r=z>7)ubh<qE^%c4-q-!A*_UU0^yg@743QKMXWZpG*yLF$abL;
+z+71LcVbl*#0LqDmZhS@EYU}^j*3Y%E+_lqjva0sfgeAcjhjQ0;M<*xD>)>GHffR@3
+zF?QAUb`_yILh4ysr@d-~)K5c>BSejh^%!M%Q*0j(qRk)~@1vVzYVSlCd<u&b5uAX@
+z1TuNUjn3bKeFlL!$kL%SHlNcMGR7q{&M5x}t&1#q7(%!W`o6Mp{%C1rkKBOpln4Ho
+I&0!|+3tF$yWB>pF
+
+diff --git a/repository_before/app/score.py b/repository_after/app/score.py
+index f8b1ffb..e124dde 100644
+--- a/repository_before/app/score.py
++++ b/repository_after/app/score.py
+@@ -1,5 +1,20 @@
+ from datetime import datetime
+ 
++def _parse_float_lossy(x):
++    for converter in (lambda y: y, str):
++        try:
++            return float(converter(x))
++        except:
++            pass
++    return 0.0
++
++def _parse_int_default_one(x):
++    try:
++        return int(x)
++    except:
++        return 1
++
++
+ def calc_score(events, user, now=None):
+     """
+     events: list of dicts with keys:
+@@ -17,21 +32,10 @@ def calc_score(events, user, now=None):
+ 
+     for e in events:
+         # value parsing (intentionally redundant and lossy)
+-        v = e.get("value")
+-        try:
+-            v = float(v)
+-        except:
+-            try:
+-                v = float(str(v))
+-            except:
+-                v = 0.0
++        v = _parse_float_lossy(e.get("value"))
+ 
+         # weight parsing (order matters)
+-        w = e.get("weight", 1)
+-        try:
+-            w = int(w)
+-        except:
+-            w = 1
++        w = _parse_int_default_one(e.get("weight", 1))
+ 
+         if w < 0:
+             w = 0

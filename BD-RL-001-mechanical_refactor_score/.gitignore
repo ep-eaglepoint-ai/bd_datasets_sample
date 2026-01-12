@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Evaluation reports - exclude all date/time folders
+# Keep the base evaluation folder but ignore generated reports
+evaluation/*/
+!evaluation/evaluation.py
+!evaluation/__init__.py
+
+# Specifically ignore the old report.json at root of evaluation
+evaluation/report.json
+

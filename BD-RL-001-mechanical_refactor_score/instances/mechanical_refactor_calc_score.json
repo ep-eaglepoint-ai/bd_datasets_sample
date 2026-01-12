@@ -1,0 +1,21 @@
+{
+  "instance_id": "BD-RL-001",
+  "problem_statement": "Perform a mechanical refactor of the `calc_score` function to eliminate code duplication through structural de-duplication while preserving bit-for-bit runtime behavior. The current implementation contains repeated parsing patterns (float conversion with fallback to string conversion, int conversion with default) that appear multiple times in the code. Refactor the implementation to extract helper functions that consolidate this duplicated logic. Requirements: maintain exact behavioral equivalence including all edge cases (NaN handling, negative zero checks, intentional quirks in date calculations and tier bonuses), reduce float() call count through consolidation, keep line count increase to +5 lines or less, create at least one private helper function (prefixed with _), preserve the public API including function name and docstring, and ensure all existing behavior tests pass. The refactored code must handle all adversarial inputs identically to the original including type errors, malformed data, and boundary conditions.",
+  "base_commit": "repository_before",
+  "test_patch": "tests/",
+  "repo": "https://github.com/eaglepoint-ai/bytedance_dataset/tree/main/BD-RL-001-mechanical_refactor_score",
+  "environment_setup": "Dockerfile",
+  "FAIL_TO_PASS": [
+    "tests/test_structure.py::test_helper_function_exists",
+    "tests/test_structure.py::test_parsing_duplication_reduced",
+    "tests/test_structure.py::test_line_count_not_excessive"
+  ],
+  "PASS_TO_PASS": [
+    "tests/test_before.py::test_before_matches_reference_vectors",
+    "tests/test_after.py::test_after_matches_reference_vectors",
+    "tests/test_calc_score_equivalence.py::test_public_api_docstring_and_name_match",
+    "tests/test_calc_score_equivalence.py::test_equivalence_on_handpicked_adversarial_inputs",
+    "tests/test_calc_score_equivalence.py::test_equivalence_randomized_fuzz_deterministic"
+  ]
+}
+
