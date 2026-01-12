@@ -1,0 +1,18 @@
+{
+  "instance_id": "BD-RL-009",
+  "problem_statement": "Optimize the employee skill matching engine from O(n²) to near-linear for 10,000+ employees. Use hashing/indexing and temporal data structures, parallelize where helpful, avoid full in-memory sorting, and complete under 1 second while maintaining matching quality/flexibility.",
+  "base_commit": "repository_before",
+  "test_patch": "tests/",
+  "repo": "https://github.com/eaglepoint-ai/bytedance_dataset/tree/main/BD-RL-009-swe_skill_matching",
+  "environment_setup": "Dockerfile",
+  "FAIL_TO_PASS": [
+    "tests/tests.csproj::tests.RepositoryBeforeEMPerformanceTest.RepositoryBeforeEMPerformanceTest_FindBestEmployees_WarmRun_ExceedsBudget",
+    "tests/tests.csproj::tests.RepositoryBeforeEMPerformanceTest.RepositoryBeforeEMPerformanceTest_FindBestEmployees_Scaling_DegradesTooFast",
+    "tests/tests.csproj::tests.RepositoryBeforeEMPerformanceTest.RepositoryBeforeEMPerformanceTest_FindBestEmployees_Allocations_ExceedBudget_WhenManyMatches"
+  ],
+  "PASS_TO_PASS": [
+    "tests/tests.csproj::tests.RepositoryAfterEMPerformanceTest.RepositoryAfterEMPerformanceTest_FindBestEmployees_WarmRun_CompletesWithinBudget",
+    "tests/tests.csproj::tests.RepositoryAfterEMPerformanceTest.RepositoryAfterEMPerformanceTest_FindBestEmployees_Scaling_WithinBudget",
+    "tests/tests.csproj::tests.RepositoryAfterEMPerformanceTest.RepositoryAfterEMPerformanceTest_FindBestEmployees_Allocations_StayWithinBudget_WhenManyMatches"
+  ]
+}

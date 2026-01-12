@@ -1,0 +1,20 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    image: swe_skill_matching:runtime
+    container_name: swe_skill_matching_app
+    stdin_open: true
+    tty: true
+
+  tests:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: tests
+    image: swe_skill_matching:tests
+    container_name: swe_skill_matching_tests
+    command: ["dotnet", "test", "tests/tests.csproj", "-c", "Release", "--no-build", "-v", "minimal"]
+    working_dir: /src

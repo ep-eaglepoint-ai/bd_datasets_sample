@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="repository_after\**" />
+    <Compile Remove="repository_before/**/*.cs" />
+    <Compile Remove="repository_after/**/*.cs" />
+    <Compile Remove="repository_before\**" />
+    <Compile Remove="evaluation/**/*.cs" />
+    <Compile Remove="evaluation\**" />
+    <Compile Remove="tests/**/*.cs" />
+    <Compile Remove="tests\**" />
+    <EmbeddedResource Remove="repository_after\**" />
+    <EmbeddedResource Remove="repository_before\**" />
+    <EmbeddedResource Remove="evaluation\**" />
+    <EmbeddedResource Remove="tests\**" />
+    <None Remove="repository_after\**" />
+    <None Remove="repository_before\**" />
+    <None Remove="evaluation\**" />
+    <None Remove="tests\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="repository_before\repository_before.csproj" ReferenceOutputAssembly="false" />
+    <ProjectReference Include="repository_after\repository_after.csproj" ReferenceOutputAssembly="false" />
+  </ItemGroup>
+</Project>
