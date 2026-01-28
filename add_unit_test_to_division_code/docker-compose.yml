@@ -1,0 +1,8 @@
+services:
+  tests:
+    build: .
+    volumes:
+      - .:/app
+    command: >
+      pytest -v -s
+      tests/test_division_meta.py
